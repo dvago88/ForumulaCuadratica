@@ -13,28 +13,31 @@
         android:id="@+id/a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Letra a"
-        android:textColor="#80ffffff"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"/>
+        android:text="@string/letra_a"
+        android:textColor="#80ffffff"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:text="Letra b"
+        android:layout_marginTop="22dp"
+        android:text="@string/letra_b"
         android:textColor="#80ffffff"
+        android:textSize="20sp"
         android:layout_below="@+id/letraA"
-        android:layout_alignStart="@+id/letraC"/>
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:id="@+id/c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:text="Letra c"
+        android:layout_marginTop="27dp"
+        android:text="@string/letra_c"
         android:textColor="#80ffffff"
+        android:textSize="20sp"
         android:layout_below="@+id/letraB"
         android:layout_alignParentStart="true"/>
 
@@ -42,11 +45,12 @@
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="@string/camposIncompletos"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
         android:layout_above="@+id/calcularButton"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="41dp"
-        android:layout_marginStart="32dp"
-        android:textColor="@android:color/white"/>
+        android:layout_alignParentStart="true"/>
 
     <Button
         android:id="@+id/calcularButton"
@@ -55,7 +59,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@android:color/white"
-        android:text="Calcular"/>
+        android:text="@string/botonCalcular"
+        android:textColor="#51b46d"/>
 
     <EditText
         android:id="@+id/letraA"
@@ -63,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="text"
         android:layout_below="@+id/a"
         android:layout_alignParentStart="true"/>
 
@@ -71,9 +76,9 @@
         android:id="@+id/letraB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="26dp"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="text"
         android:layout_below="@+id/b"
         android:layout_alignParentStart="true"/>
 
@@ -81,19 +86,18 @@
         android:id="@+id/letraC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/c"
         android:layout_marginTop="19dp"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_below="@+id/c"
-        android:layout_alignEnd="@+id/letraB"/>
+        android:inputType="text"/>
 
     <TextView
         android:id="@+id/resultado2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/camposIncompletos"
+        android:textSize="17sp"
         android:layout_above="@+id/resultado"
-        android:layout_alignEnd="@+id/resultado"
-        android:layout_marginBottom="12dp"
-        />
+        android:layout_alignParentStart="true"/>
 
 </RelativeLayout>

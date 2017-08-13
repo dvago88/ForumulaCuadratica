@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Formula Cuadratica</string>
+    <string name="ResultadoImaginario">Resultado no es un número real</string>
+    <string name="letra_a">Letra a</string>
+    <string name="letra_b">Letra b</string>
+    <string name="letra_c">Letra c</string>
+    <string name="botonCalcular">Calcular</string>
+    <string name="camposIncompletos">No has llenado todos los campos con numeros</string>
+    <string name="soloHayUnaRespuesta">Solo hay 1 respuesta</string>
 </resources>
